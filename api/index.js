@@ -1,14 +1,7 @@
-
-module.exports = (req, res)=>{
-
-    
-    var express = require('express');
-    
-    var app = express()
-    
-    app.get('/test', (req,res)=>{
-        res.send('server working')
+module.exports = (req, res) => {
+    res.json({
+      body: req.body,
+      query: req.query,
+      cookies: req.cookies
     })
-    
-    // app.listen('3000')
-}
+  }
