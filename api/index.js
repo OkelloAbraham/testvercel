@@ -9,4 +9,4 @@ app.get('/', (req, res)=>{
     res.send('why always you')
 })
 
-app.listen(80)
+app.listen()
